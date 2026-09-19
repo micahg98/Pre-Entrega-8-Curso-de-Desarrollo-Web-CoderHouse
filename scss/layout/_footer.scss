@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+
+.footer-principal { background-color: $color-purple; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: $space-lg; }
+.footer-principal .titulo-terciario,
+.footer-principal a,
+.footer-principal .copyright,
+.footer-principal .copyright p { color: $color-white; }
+.footer-principal .titulo-terciario,
+.footer-principal a,
+.footer-principal .copyright,
+.footer-principal .copyright p { font-size: $font-size-card; font-weight: $font-weight-medium; }
+.contenedor-footer { flex: 1; padding: $space-xl $space-xl 0 $space-xl; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: $space-sm; align-items: baseline; }
+.redes-lista { display: flex; list-style: none; gap: $space-lg; }
+.redes-lista a { color: $color-white; text-decoration: none; font-weight: $font-weight-medium; }
+.redes-lista a:hover { color: $color-white; }
+.copyright { background-color: $color-purple; color: $color-white; text-align: center; padding: $space-lg; margin-top: 0; }
+
+@media (min-width: $breakpoint-tablet) {
+  .footer-principal { flex-direction: row; justify-content: space-between; align-items: center; }
+  .contenedor-footer { padding: $space-xl $space-3xl; flex-direction: row; gap: $space-2xl; }
+  .copyright { margin-top: 0; padding: $space-xl $space-3xl; background-color: transparent; color: $color-white; text-align: right; }
+}
