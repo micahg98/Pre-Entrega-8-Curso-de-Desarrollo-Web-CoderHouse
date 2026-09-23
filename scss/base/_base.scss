@@ -1,6 +1,8 @@
 @use "../utilities/variables" as *;
 
-html { overflow-x: hidden; }
+html {
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
@@ -31,5 +33,10 @@ img {
   display: block;
 }
 
-.imagen-presentacion-index { width: auto; max-width: 100%; max-height: $presentation-image-max-height; object-fit: contain; margin: 0 auto; }
-
+.imagen-presentacion-index {
+  width: auto;
+  max-width: 100%;
+  max-height: $presentation-image-max-height;
+  object-fit: contain;
+  margin: 0 auto;
+}

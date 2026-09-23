@@ -12,6 +12,22 @@
   }
 }
 
+@keyframes header-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-$space-sm);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-principal {
+  animation: header-reveal $animation-duration $animation-easing both;
+}
+
 @keyframes card-title-reveal {
   from {
     opacity: 0;
@@ -124,15 +140,15 @@ main {
   animation: about-subtitle-reveal $animation-duration $animation-easing both;
 }
 
-.pagina-sobre-mi main > .seccion-sobre-mi > .titulo-secundario {
+.pagina-sobre-mi main>.seccion-sobre-mi>.titulo-secundario {
   animation: home-title-reveal $home-title-animation-duration $animation-easing both;
 }
 
-.pagina-proyectos .tarjeta-proyecto > .titulo-saludo {
+.pagina-proyectos .tarjeta-proyecto>.titulo-saludo {
   animation: home-title-reveal $home-title-animation-duration $animation-easing both;
 }
 
-.pagina-proyectos main > .seccion-contenedor:nth-of-type(2) .tarjeta-proyecto > .titulo-saludo {
+.pagina-proyectos main>.seccion-contenedor:nth-of-type(2) .tarjeta-proyecto>.titulo-saludo {
   animation-delay: $projects-title-delay;
 }
 

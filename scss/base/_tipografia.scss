@@ -64,8 +64,13 @@ body {
   letter-spacing: normal;
 }
 
-.texto-nav-marca { font-size: $font-size-md; }
-.texto-menu-titulo { font-size: $font-size-xl; }
+.texto-nav-marca {
+  font-size: $font-size-md;
+}
+
+.texto-menu-titulo {
+  font-size: $font-size-xl;
+}
 
 .texto-nav-inicio,
 .texto-nav-sobre-mi,
@@ -98,7 +103,9 @@ body {
   font-size: $font-size-md;
 }
 
-.texto-cuerpo-inicio { font-weight: $font-weight-card; }
+.texto-cuerpo-inicio {
+  font-weight: $font-weight-card;
+}
 
 .texto-presentacion-descripcion,
 .texto-presentacion-motivacion {
@@ -116,6 +123,11 @@ body {
 
 .texto-red-facebook,
 .texto-red-instagram,
-.texto-red-x { font-size: $font-size-md; }
+.texto-red-x {
+  font-size: $font-size-md;
+}
+
 .texto-copyright,
-.texto-horarios { font-size: $font-size-sm; }
+.texto-horarios {
+  font-size: $font-size-sm;
+}
