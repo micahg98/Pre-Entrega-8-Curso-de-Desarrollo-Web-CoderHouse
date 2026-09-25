@@ -296,14 +296,6 @@ main {
   animation: home-title-reveal 1.2s ease both;
 }
 
-.pagina-proyectos .tarjeta-proyecto > .titulo-saludo {
-  animation: home-title-reveal 1.2s ease both;
-}
-
-.pagina-proyectos main > .seccion-contenedor:nth-of-type(2) .tarjeta-proyecto > .titulo-saludo {
-  animation-delay: 0.12s;
-}
-
 .pagina-sobre-mi .seccion-sobre-mi figure img {
   transition: box-shadow 0.35s ease, transform 0.35s ease;
 }
@@ -587,6 +579,12 @@ main {
 .pagina-proyectos .contenedor-footer,
 .pagina-proyectos .copyright {
   text-align: center;
+}
+.pagina-proyectos main {
+  gap: 5rem;
+}
+.pagina-proyectos main > .titulo-pagina-proyectos {
+  margin-bottom: 1rem;
 }
 
 .pagina-inicio main {

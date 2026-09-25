@@ -144,14 +144,6 @@ main {
   animation: home-title-reveal $home-title-animation-duration $animation-easing both;
 }
 
-.pagina-proyectos .tarjeta-proyecto>.titulo-saludo {
-  animation: home-title-reveal $home-title-animation-duration $animation-easing both;
-}
-
-.pagina-proyectos main>.seccion-contenedor:nth-of-type(2) .tarjeta-proyecto>.titulo-saludo {
-  animation-delay: $projects-title-delay;
-}
-
 .pagina-sobre-mi .seccion-sobre-mi figure img {
   transition: box-shadow $transition-standard, transform $transition-standard;
 

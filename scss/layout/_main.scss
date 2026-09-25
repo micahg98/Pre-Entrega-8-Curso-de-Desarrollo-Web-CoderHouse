@@ -59,6 +59,14 @@
   .copyright {
     text-align: center;
   }
+
+  main {
+    gap: $space-6xl;
+
+    > .titulo-pagina-proyectos {
+      margin-bottom: $space-lg;
+    }
+  }
 }
 
 .pagina-inicio {

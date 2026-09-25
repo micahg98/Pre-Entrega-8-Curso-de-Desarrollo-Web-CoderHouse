@@ -8,13 +8,14 @@
   <!-- CSS de Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <!-- CSS stylesheet local -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
-  <header class="header-principal sticky-top bg-white shadow-sm">
+  <header class="header-principal sticky-top bg-white shadow-sm" data-aos="fade-down" data-aos-duration="700">
     <!-- Marca y Títulos -->
     <div class="marca-contenedor text-center p-3">
       <a href="index.html" class="navbar-brand p-0 m-0" aria-label="Ir a inicio">
@@ -69,10 +70,10 @@
   <main class="container my-5">
 
     <!-- Sección Presentación (Card Horizontal) -->
-    <section class="seccion-contenedor mb-5">
+    <section class="seccion-contenedor mb-5" data-aos="fade-up">
       <h2 class="titulo-secundario titulo-presentacion text-center">Presentación</h2>
 
-      <div class="card mb-3 shadow-sm border-0 overflow-hidden">
+      <div class="card mb-3 shadow-sm border-0 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-0 align-items-center">
           <div class="col-md-5">
             <img src="images/foto-presentacion.jpg" alt="Foto de edificio catedral de La Plata, Argentina" class="img-fluid imagen-presentacion-index">
@@ -91,13 +92,13 @@
     </section>
 
     <!-- Sección Servicios con Cards de Bootstrap -->
-    <section class="seccion-contenedor my-5">
+    <section class="seccion-contenedor my-5" data-aos="fade-up">
       <h3 class="titulo-terciario titulo-servicios titulo-saludo text-center">Servicios</h3>
 
       <div class="row g-4">
         <!-- Card 1: UX/UI -->
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0" data-aos="fade-up" data-aos-delay="100">
             <img src="images/flexy-pantalla-5.jpeg" class="card-img-top" alt="Diseño UX/UI" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title titulo-servicio-uxui titulo-saludo">Diseño UX/UI</h5>
@@ -108,7 +109,7 @@
 
         <!-- Card 2: Diseño Web -->
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0" data-aos="fade-up" data-aos-delay="200">
             <img src="images/web-henko.png" class="card-img-top" alt="Diseño Web" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title titulo-servicio-web titulo-saludo">Diseño Web</h5>
@@ -119,7 +120,7 @@
 
         <!-- Card 3: Diseño Gráfico -->
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0" data-aos="fade-up" data-aos-delay="300">
             <img src="images/Henko-portafolio-1.jpg" class="card-img-top" alt="Diseño Gráfico" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title titulo-servicio-grafico titulo-saludo">Diseño Gráfico</h5>
@@ -151,6 +152,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 700, once: true });</script>
 </body>
 
 </html>
